@@ -1,6 +1,14 @@
- docker build -t pets-app/micro-service-users:v0.0.1 .
+# Micro Service Social
 
+> This service responds a lists of social networks
 
-docker run -it --name micro-service-users \
--p 3000:3000 -d \
-pets-app/micro-service-users:v0.0.1
+## Build image
+```
+docker build -t darcusfenix/portfolio-social:0.1.1.0 .
+```
+
+## Run container
+```
+docker run -it -p 3000:3000 -d darcusfenix/portfolio-social:0.1.0
+```
+
